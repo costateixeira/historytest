@@ -13,6 +13,7 @@ Title: "Initial creation of MyValueSet and MyPatient"
 Usage: #definition
 * target[+] = Reference(StructureDefinition/MyPatient)
 * target[+] = Reference(ValueSet/MyValueSet)
+* target[+] = Reference(page.index)
 * recorded = "2023-01-30T13:00:00.0000Z"
 * occurredDateTime = "2023-07-01"
 * reason = http://terminology.hl7.org/CodeSystem/v3-ActReason#METAMGT
