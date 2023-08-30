@@ -1,3 +1,10 @@
+Logical: MyLogicalModel
+Title: "MyLogicalModel"
+Description: "MyLogicalModel"
+
+* identifier 0..* Identifier "Identifier"
+* nothing 0..0 string "Nothing"
+
 ValueSet: MyValueSet
 Title: "ValueSet"
 Description: "ValueSet"
@@ -12,6 +19,7 @@ InstanceOf: Provenance
 Title: "Initial creation of MyValueSet and MyPatient"
 Usage: #definition
 * target[+] = Reference(StructureDefinition/MyPatient)
+* target[+] = Reference(StructureDefinition/MyLogicalModel)
 * target[+] = Reference(ValueSet/MyValueSet)
 * target[+].identifier.value = "definition.page.page.nameUrl.index"
 * recorded = "2023-01-30T13:00:00.0000Z"
