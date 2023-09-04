@@ -1,0 +1,30 @@
+﻿ExampleIG : Validation Results
+=========================================
+
+err = 3, warn = 8, info = 0
+IG Publisher Version: 1.4.2
+Generated Mon Sep 04 06:05:28 UTC 2023. FHIR version 4.0.1 for my-ig#1.0.0 (canonical = http://example.com/fhir/example)
+ Build Errors : 0 / 5 / 0
+ /github/workspace/fsh-generated/resources/ImplementationGuide-my-ig : 3 / 0 / 1
+ /github/workspace/fsh-generated/resources/Provenance-MyValueSet-initial-history : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MyLogicalModel : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MyPatient : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-MyValueSet : 0 / 1 / 1
+</table>
+== n/a ==
+WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-my-ig.json ==
+ERROR: ImplementationGuide.where(url = 'http://example.com/fhir/example'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-my-ig.json - the canonical URL (http://example.com/fhir/example/ImplementationGuide/my-ig) does not match the URL (http://example.com/fhir/example)
+ERROR: ImplementationGuide.url: Resource id/url mismatch: my-ig/http://example.com/fhir/example
+ERROR: /github/workspace/fsh-generated/resources/ImplementationGuide-my-ig: URL Mismatch http://example.com/fhir/example/ImplementationGuide/my-ig vs http://example.com/fhir/example
+== fsh-generated/resources/Provenance-MyValueSet-initial-history.json ==
+WARNING: Provenance/MyValueSet-initial-history: Provenance.activity.coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/StructureDefinition-MyLogicalModel.json ==
+== fsh-generated/resources/StructureDefinition-MyPatient.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/MyPatient'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/ValueSet-MyValueSet.json ==
+WARNING: ValueSet/MyValueSet: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile

@@ -1,0 +1,13 @@
+﻿/github/workspace/fsh-generated/resources/ImplementationGuide-my-ig.json: line 0, col 0, Error - Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-my-ig.json - the canonical URL (http://example.com/fhir/example/ImplementationGuide/my-ig) does not match the URL (http://example.com/fhir/example) (INVALID)
+/github/workspace/fsh-generated/resources/ImplementationGuide-my-ig.json: line 0, col 0, Error - Resource id/url mismatch: my-ig/http://example.com/fhir/example (INVARIANT)
+/github/workspace/fsh-generated/resources/ImplementationGuide-my-ig.json: line 0, col 0, Error - URL Mismatch http://example.com/fhir/example/ImplementationGuide/my-ig vs http://example.com/fhir/example (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/Provenance-MyValueSet-initial-history.json: line 30, col 8, Warning - A code with no system has no defined meaning. A system should be provided (CODEINVALID)
+/github/workspace/fsh-generated/resources/StructureDefinition-MyPatient.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/ValueSet-MyValueSet.json: line 1, col 746, Warning - The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile (REQUIRED)
+
+ExampleIG : Validation Results
+=========================================
+
+err = 3, warn = 8, info = 0
+IG Publisher Version: 1.4.2
+Generated Mon Sep 04 06:05:28 UTC 2023. FHIR version 4.0.1 for my-ig#1.0.0 (canonical = http://example.com/fhir/example)

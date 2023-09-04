@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Provenance xmlns="http://hl7.org/fhir">
+  <id value="MyValueSet-initial-history"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Provenance</b><a name="MyValueSet-initial-history"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Provenance &quot;MyValueSet-initial-history&quot; </p></div><p><b>target</b>: </p><ul><li><a href="StructureDefinition-MyPatient.html">StructureDefinition/MyPatient</a> &quot;MyPatient&quot;</li><li><a href="StructureDefinition-MyLogicalModel.html">StructureDefinition/MyLogicalModel</a> &quot;MyLogicalModel&quot;</li><li><a href="ValueSet-MyValueSet.html">ValueSet/MyValueSet</a> &quot;MyValueSet&quot;</li></ul><p><b>occurred</b>: 2023-07-01</p><p><b>recorded</b>: Jan 30, 2023, 1:00:00 PM</p><p><b>reason</b>: Create ValueSet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html">ActReason</a>#METAMGT)</span></p><p><b>activity</b>: CREATE <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#CREATE)</span></p><h3>Agents</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Who</b></td></tr><tr><td style="display: none">*</td><td>Author <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-provenance-participant-type.html">Provenance participant type</a>#author)</span></td><td><span>: Me</span></td></tr></table></div>
+  </text>
+  <target>
+    <reference value="StructureDefinition/MyPatient"/>
+  </target>
+  <target>
+    <reference value="StructureDefinition/MyLogicalModel"/>
+  </target>
+  <target>
+    <reference value="ValueSet/MyValueSet"/>
+  </target>
+  <occurredDateTime value="2023-07-01"/>
+  <recorded value="2023-01-30T13:00:00.0000Z"/>
+  <reason>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="METAMGT"/>
+    </coding>
+    <text value="Create ValueSet"/>
+  </reason>
+  <activity>
+    <coding>
+      <code value="CREATE"/>
+    </coding>
+  </activity>
+  <agent>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/provenance-participant-type"/>
+        <code value="author"/>
+      </coding>
+    </type>
+    <who>
+      <display value="Me"/>
+    </who>
+  </agent>
+</Provenance>

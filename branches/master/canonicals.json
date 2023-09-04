@@ -1,0 +1,30 @@
+[
+  {
+    "id" : "my-ig",
+    "type" : "ImplementationGuide",
+    "url" : "http://example.com/fhir/example",
+    "version" : "1.0.0",
+    "name" : "ExampleIG"
+  },
+  {
+    "id" : "MyLogicalModel",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/MyLogicalModel",
+    "version" : "1.0.0",
+    "name" : "MyLogicalModel"
+  },
+  {
+    "id" : "MyPatient",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/MyPatient",
+    "version" : "1.0.0",
+    "name" : "MyPatient"
+  },
+  {
+    "id" : "MyValueSet",
+    "type" : "ValueSet",
+    "url" : "http://example.com/fhir/example/ValueSet/MyValueSet",
+    "version" : "1.0.0",
+    "name" : "MyValueSet"
+  }
+]

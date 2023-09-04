@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/Provenance/MyValueSet-initial-history> a fhir:Provenance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MyValueSet-initial-history"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Provenance</b><a name=\"MyValueSet-initial-history\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Provenance &quot;MyValueSet-initial-history&quot; </p></div><p><b>target</b>: </p><ul><li><a href=\"StructureDefinition-MyPatient.html\">StructureDefinition/MyPatient</a> &quot;MyPatient&quot;</li><li><a href=\"StructureDefinition-MyLogicalModel.html\">StructureDefinition/MyLogicalModel</a> &quot;MyLogicalModel&quot;</li><li><a href=\"ValueSet-MyValueSet.html\">ValueSet/MyValueSet</a> &quot;MyValueSet&quot;</li></ul><p><b>occurred</b>: 2023-07-01</p><p><b>recorded</b>: Jan 30, 2023, 1:00:00 PM</p><p><b>reason</b>: Create ValueSet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html\">ActReason</a>#METAMGT)</span></p><p><b>activity</b>: CREATE <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#CREATE)</span></p><h3>Agents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Who</b></td></tr><tr><td style=\"display: none\">*</td><td>Author <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-provenance-participant-type.html\">Provenance participant type</a>#author)</span></td><td><span>: Me</span></td></tr></table></div>"
+  ] ; # 
+  fhir:target ( [
+     fhir:link <http://example.com/fhir/example/StructureDefinition/MyPatient> ;
+     fhir:reference [ fhir:v "StructureDefinition/MyPatient" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/StructureDefinition/MyLogicalModel> ;
+     fhir:reference [ fhir:v "StructureDefinition/MyLogicalModel" ]
+  ] [
+     fhir:link <http://example.com/fhir/example/ValueSet/MyValueSet> ;
+     fhir:reference [ fhir:v "ValueSet/MyValueSet" ]
+  ] ) ; # 
+  fhir:occurred [ fhir:v "2023-07-01"^^xsd:date] ; # 
+  fhir:recorded [ fhir:v "2023-01-30T13:00:00.0000Z"^^xsd:dateTime] ; # 
+  fhir:reason ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "METAMGT" ]
+     ] ) ;
+     fhir:text [ fhir:v "Create ValueSet" ]
+  ] ) ; # 
+  fhir:activity [
+     fhir:coding ( [
+       fhir:code [ fhir:v "CREATE" ]
+     ] )
+  ] ; # 
+  fhir:agent ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/provenance-participant-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "author" ]
+       ] )
+     ] ;
+     fhir:who [
+       fhir:display [ fhir:v "Me" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

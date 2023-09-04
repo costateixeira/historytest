@@ -1,0 +1,241 @@
+{
+  "date" : "Mon, 04 Sep, 2023 06:04:41 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-my-ig.json",
+      "size" : 2941,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 64,
+          "length" : 1060
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 68,
+          "length" : 9
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 68,
+          "length" : 1123
+        },
+        {
+          "activity" : "validate",
+          "start" : 74,
+          "length" : 1727
+        },
+        {
+          "activity" : "generate1",
+          "start" : 77,
+          "length" : 167
+        },
+        {
+          "activity" : "generate2",
+          "start" : 80,
+          "length" : 206
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 105,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 111,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-MyPatient.json",
+      "size" : 1110,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 64,
+          "length" : 73
+        },
+        {
+          "activity" : "load",
+          "start" : 64,
+          "length" : 80
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 66,
+          "length" : 2284
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 69,
+          "length" : 2284
+        },
+        {
+          "activity" : "validate",
+          "start" : 73,
+          "length" : 1486
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 76,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 76,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 78,
+          "length" : 395
+        },
+        {
+          "activity" : "generate2",
+          "start" : 80,
+          "length" : 3162
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 105,
+          "length" : 25
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 111,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-MyValueSet.json",
+      "size" : 217,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 64,
+          "length" : 13
+        },
+        {
+          "activity" : "load",
+          "start" : 64,
+          "length" : 22
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 72,
+          "length" : 145
+        },
+        {
+          "activity" : "validate",
+          "start" : 72,
+          "length" : 770
+        },
+        {
+          "activity" : "generate1",
+          "start" : 78,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 83,
+          "length" : 13913
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 105,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-MyLogicalModel.json",
+      "size" : 1410,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 64,
+          "length" : 172
+        },
+        {
+          "activity" : "load",
+          "start" : 64,
+          "length" : 234
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 68,
+          "length" : 269
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 72,
+          "length" : 282
+        },
+        {
+          "activity" : "validate",
+          "start" : 74,
+          "length" : 86
+        },
+        {
+          "activity" : "generate1",
+          "start" : 78,
+          "length" : 21
+        },
+        {
+          "activity" : "generate2",
+          "start" : 97,
+          "length" : 168
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 105,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Provenance-MyValueSet-initial-history.json",
+      "size" : 929,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 64,
+          "length" : 19
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 68,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 72,
+          "length" : 202
+        },
+        {
+          "activity" : "validate",
+          "start" : 76,
+          "length" : 107
+        },
+        {
+          "activity" : "processProvenanceDetails",
+          "start" : 76,
+          "length" : 18
+        },
+        {
+          "activity" : "generate1",
+          "start" : 78,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 98,
+          "length" : 20
+        }
+      ]
+    }
+  ]
+}
