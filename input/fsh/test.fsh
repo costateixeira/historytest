@@ -29,6 +29,5 @@ Usage: #definition
 //* activity = http://terminology.hl7.org/CodeSystem/v3-DataOperation#CREATE
 * activity = #CREATE
 * agent[+].type = http://terminology.hl7.org/CodeSystem/provenance-participant-type#author
-* agent[+].type = #author
 * agent[=].who.display = "Me"
 
